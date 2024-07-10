@@ -12,3 +12,10 @@ void selectionSort(int arr[], int n)
         swap(arr[min_idx], arr[i]);
     }
 }
+
+void printArray(int arr[], int size)
+{
+    for (int i = 0; i < size; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
