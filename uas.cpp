@@ -3,6 +3,9 @@ using namespace std;
 
 void selectionSort(int arr[], int n)
 {
+    cout << "Array sebelum diurutkan: ";
+    printArray(arr, n);
+
     for (int i = 0; i < n - 1; i++)
     {
         int min_idx = i;
@@ -11,6 +14,9 @@ void selectionSort(int arr[], int n)
                 min_idx = j;
         swap(arr[min_idx], arr[i]);
     }
+
+    cout << "Array setelah diurutkan: ";
+    printArray(arr, n);
 }
 
 void printArray(int arr[], int size)
